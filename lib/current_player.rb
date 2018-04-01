@@ -5,6 +5,8 @@ def turn_count(board)
   return turn
 end
 
-def turn_player
-
+def turn_player(board)
+  turn = turn_count(board)
+  turn % 2 == 0 ? return "X": return "O"
+    
 end
